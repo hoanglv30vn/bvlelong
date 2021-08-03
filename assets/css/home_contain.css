@@ -1,0 +1,18 @@
+.title-center {
+    color: #ff0000;
+    font-size: 3rem;
+    line-height: 4rem;
+    width: 100%;
+    background: url(../img/gachchan.png) center bottom no-repeat;
+    text-align: center;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    text-transform: uppercase;
+    padding-top: 6px;
+}
+
+.video-itro {
+    width: 100%;
+    text-align: center;
+}

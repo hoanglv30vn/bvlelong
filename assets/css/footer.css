@@ -4,7 +4,8 @@ footer {
     position: relative;
 }
 
-.map-address {}
+
+/* .map-address {} */
 
 
 /* end map-address */
@@ -27,6 +28,7 @@ footer {
     text-shadow: 1px 1px 1px #333;
     color: var(--color-base);
     margin-top: 12px;
+    text-transform: uppercase;
 }
 
 .contact_ {
@@ -41,13 +43,15 @@ footer {
     margin-right: 4px;
 }
 
+
+/* 
 .contact_addr {}
 
 .contact_mail {}
 
 .contact_mobile {}
 
-.contact_phone {}
+.contact_phone {} */
 
 .contact_license {
     padding-top: 6px;

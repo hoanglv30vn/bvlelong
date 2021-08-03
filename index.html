@@ -6,10 +6,128 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Le Long Security</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,500;0,700;1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/normalize.min.css">
+    <link rel="stylesheet" href="./assets/font/themify-icons/themify-icons.css">
+    <link rel="stylesheet" href="./assets/css/grid.css">
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/reponsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer">
 </head>
 
 <body>
-    Lê Long
+    <div class="body hl-grid hl-wide">
+        <header class="header ">
+            <div class="heade__contain hl-row no-gutters">
+                <div class="logo hl-col l-3 m-3 c-0">
+                    <a class="logo-link" href="/">
+                        <img class="logo__img" src="./assets/img/le-long-png.png" alt="logo-lelong">
+                    </a>
+                </div>
+                <div class="name-cty  hl-col l-9 m-9 c-12">
+                    <h2 class="text-cty ">Công ty TNHH DV bảo vệ</h2>
+                    <h1 class="name-lelong ">Lê Long</h1>
+                    <p class="hotline"><i class="hotline-phone fas fa-phone-alt"></i>Hotline: 098.7654.321 - 09991.111.111</p>
+                </div>
+
+            </div>
+            <nav class="navbar hl-row no-gutters">
+                <ul class="nav-list">
+                    <li class="nav-item view-list">
+                        <button id="btn__menu" class="reset-btn btn-menu">
+                            <i class="ti-view-list"></i> Menu
+                        </button>
+                    </li>
+                    <li style="border: none;" class="nav-item item-menu">
+                        <a href="/"> <i class="ti-home"></i> Trang chủ</a>
+                    </li>
+                    <li class="nav-item item-menu">
+                        <a href="/">    Giới thiệu</a>
+                    </li>
+                    <li class="nav-item item-menu">
+                        <a href="/">    Dịch vụ</a>
+                    </li>
+                    <li class="nav-item item-menu">
+                        <a href="/">    Thông báo</a>
+                    </li>
+                    <li class="nav-item item-menu">
+                        <a href="/">    Tuyển dụng</a>
+                    </li>
+                    <li class="nav-item item-menu">
+                        <a href="/">    Hình ảnh</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <main class="contain">
+            <div class="slider"></div>
+            <div class="introduct"></div>
+            <div class="service-security"></div>
+            <div class="partner-w-us"></div>
+            <div class="notify"></div>
+        </main>
+        <footer>
+            <div class="map-address"></div>
+            <div class="contac"></div>
+        </footer>
+    </div>
+
+
+    <iframe frameborder="0" allowfullscreen="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" title="YouTube video player" width="560" height="315" src="https://www.youtube.com/embed/oCc-o68auAA?controls=0&amp;mute=0&amp;controls=1&amp;playsinline=1&amp;showinfo=0&amp;rel=0&amp;iv_load_policy=3&amp;modestbranding=1&amp;enablejsapi=1&amp;widgetid=1"
+        id="widget2">
+    </iframe>
+
+    <div class="modal-popup modal-popup-menu ">
+        <div class="modal-menu">
+            <div class="js-modal-close-menu close-modal">
+                <i class="far fa-times-circle"></i>
+            </div>
+            <ul class="menu_nav-list">
+                <li class="menu_nav-item-menu">Menu</li>
+                <li class="menu_nav-item">
+                    <a href="/"> <i class="ti-home"></i> Trang chủ</a>
+                </li>
+                <li class="menu_nav-item">
+                    <a href="/">Giới thiệu</a>
+                </li>
+                <li class="menu_nav-item">
+                    <a href="/">Dịch vụ</a>
+                </li>
+                <li class="menu_nav-item">
+                    <a href="/">Thông báo</a>
+                </li>
+                <li class="menu_nav-item">
+                    <a href="/">Tuyển dụng</a>
+                </li>
+                <li class="menu_nav-item">
+                    <a href="/">Hình ảnh</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <script>
+        const btnMenu = document.getElementById('btn__menu')
+        const modal = document.querySelector('.modal-popup')
+        const modalMenu = document.querySelector('.modal-popup-menu')
+
+        const modalCloseMenu = document.querySelector('.js-modal-close-menu')
+
+        function menuShow() {
+            modalMenu.classList.add('modal-show')
+        }
+
+        function menuClose() {
+            modalMenu.classList.remove('modal-show')
+        }
+        // btnLogin.addEventListener('click', showModalLogin)
+        modalCloseMenu.addEventListener('click', menuClose)
+        btnMenu.onclick = function() {
+            menuShow()
+        };
+    </script>
 </body>
 
 </html>
+<!-- code by HoàngLê hoanglv.30@gmail.com -->

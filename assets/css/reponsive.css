@@ -1,0 +1,55 @@
+            @media (min-width:740px) and (max-width: 1023px) {
+                .nav-item {
+                    font-size: 1.4rem;
+                }
+                .text-cty {
+                    font-size: 2.4rem;
+                    letter-spacing: 5px;
+                }
+            }
+            
+            @media (max-width:739px) {
+                .nav-item {
+                    font-size: 1.4rem;
+                    border: none;
+                }
+                .menu_nav-item:hover,
+                .nav-item:hover {
+                    background-color: #bdbdbd;
+                    color: var(--text-color);
+                }
+                .nav-item.view-list {
+                    display: block;
+                }
+                .item-menu {
+                    display: none;
+                }
+                .text-cty {
+                    font-size: 2.4rem;
+                    letter-spacing: 5px;
+                }
+                .name-lelong {
+                    font-size: 4.5rem;
+                    letter-spacing: 8px;
+                }
+                .hotline {
+                    text-align: center;
+                    float: none;
+                    margin: 20px 0;
+                }
+            }
+            
+            @media (max-width: 500px) {
+                .text-cty {
+                    font-size: 1.6rem;
+                    letter-spacing: 5px;
+                }
+                .name-lelong {
+                    font-size: 3.5rem;
+                    letter-spacing: 8px;
+                }
+                .hotline {
+                    font-size: 1.6rem;
+                    margin: 20px 0;
+                }
+            }

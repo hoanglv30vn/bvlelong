@@ -32,7 +32,7 @@ footer {
 }
 
 .contact_ {
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     font-weight: 400;
     margin: 12px 12px;
     width: 100%;
@@ -40,7 +40,19 @@ footer {
 }
 
 .contact_ i {
-    margin-right: 4px;
+    margin-right: 6px;
+}
+
+.contact_mail {
+    text-transform: capitalize;
+}
+
+.contact_mail a {
+    color: #001aaf;
+    font-size: 2rem;
+    font-weight: 500;
+    padding: 10px 0;
+    text-transform: none;
 }
 
 

@@ -21,6 +21,9 @@
     height: 80%;
     width: auto;
     margin: 5% 0;
+    padding: 0 20px;
+    border-radius: 12px;
+    box-shadow: 0 0 2px 5px;
 }
 
 .name-cty {
@@ -49,6 +52,11 @@
     letter-spacing: 10px;
     white-space: nowrap;
     text-shadow: 1px 1px 2px black, 2px 2px 2px white, 0 0 5px white;
+}
+
+.text-cty,
+.name-lelong {
+    margin-left: -10%;
 }
 
 .hotline {

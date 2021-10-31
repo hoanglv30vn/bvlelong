@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="./assets/css/grid.css">
     <link rel="stylesheet" href="./assets/css/base.css">
     <link rel="stylesheet" href="./assets/css/header.css">
+    <link rel="stylesheet" href="./assets/css/home_contain.css">
     <link rel="stylesheet" href="./assets/css/footer.css">
     <link rel="stylesheet" href="./assets/css/reponsive.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer">
@@ -43,35 +44,44 @@
                         </button>
                     </li>
                     <li style="border: none;" class="nav-item item-menu">
-                        <a href="/"> <i class="ti-home"></i> Trang chủ</a>
+                        <a href="#"> <i class="ti-home"></i> Trang chủ</a>
                     </li>
-                    <li class="nav-item item-menu">
-                        <a href="./intro.html">    Giới thiệu</a>
+                    <li id="butt_gioithieu" class="nav-item item-menu">
+                        Giới thiệu
                     </li>
-                    <li class="nav-item item-menu">
-                        <a href="./service.html">    Dịch vụ</a>
+                    <li id="butt_dichvu" class="nav-item item-menu">
+                        Dịch vụ
                     </li>
-                    <li class="nav-item item-menu">
-                        <a href="./notify.html">    Thông báo</a>
+                    <li id="butt_thongbao" class="nav-item item-menu">
+                        Thông báo
                     </li>
-                    <li class="nav-item item-menu">
-                        <a href="./recruitment.html">    Tuyển dụng</a>
+                    <li id="butt_tuyendung" class="nav-item item-menu">
+                        Tuyển dụng
                     </li>
-                    <li class="nav-item item-menu">
-                        <a href="./image.html">    Hình ảnh</a>
+                    <li id="butt_hinhanh" class="nav-item item-menu">
+                        Hình ảnh
                     </li>
                 </ul>
             </nav>
         </header>
-        <main style="min-height: 500px;" class="contain">
-            <h1 style="text-align: center; margin-top: 100px;">loading ...</h1>
-            <h1 style="text-align: center; margin-top: 100px;">kéo xuống ...</h1>
+        <main id="main_lelong" style="min-height: 500px;" class="contain">
+            <!-- <h1 style="text-align: center; margin-top: 100px;">loading ...</h1>
+            <h1 style="text-align: center; margin-top: 100px;">kéo xuống ...</h1> -->
+            <h1 class="title-center">Giới thiệu</h1>
+            <div class="video-itro">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/rWi-v4DkNyU?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+            </div>
+            <p>công ty chúng tôi ............ ......................... ................... ................... .......... ............ ......................... ......................... ......................... ........................... ......................................
+                ...................... ......................... ......................... ................... ....................</p>
+            <h2 class="title-center">Chỗ này sẽ giới thiệu về công ty</h2>
+
 
             <div class="slider"></div>
             <div class="introduct"></div>
             <div class="service-security"></div>
             <div class="partner-w-us"></div>
-            <div class="notify"></div>
+            <div style="height: 50px;" class="notify"></div>
         </main>
         <footer>
             <div class="map-address">
@@ -125,26 +135,7 @@
             </ul>
         </div>
     </div>
-    <script>
-        const btnMenu = document.getElementById('btn__menu')
-        const modal = document.querySelector('.modal-popup')
-        const modalMenu = document.querySelector('.modal-popup-menu')
-
-        const modalCloseMenu = document.querySelector('.js-modal-close-menu')
-
-        function menuShow() {
-            modalMenu.classList.add('modal-show')
-        }
-
-        function menuClose() {
-            modalMenu.classList.remove('modal-show')
-        }
-        // btnLogin.addEventListener('click', showModalLogin)
-        modalCloseMenu.addEventListener('click', menuClose)
-        btnMenu.onclick = function() {
-            menuShow()
-        };
-    </script>
+    <script src="./logic/main.js"></script>
 </body>
 
 </html>

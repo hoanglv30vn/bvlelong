@@ -9,7 +9,9 @@
     <title>Le Long Security</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,500;0,700;1,300&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./assets/css/normalize.min.css">
+    <!-- <link rel="stylesheet" href="./assets/css/normalize.min.css"> -->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+
     <link rel="stylesheet" href="./assets/font/themify-icons/themify-icons.css">
     <link rel="stylesheet" href="./assets/css/grid.css">
     <link rel="stylesheet" href="./assets/css/base.css">
@@ -44,27 +46,27 @@
                         </button>
                     </li>
                     <li style="border: none;" class="nav-item item-menu">
-                        <a href="/"> <i class="ti-home"></i> Trang chủ</a>
+                        <a href="index.html"> <i class="ti-home"></i> Trang chủ</a>
                     </li>
-                    <li class="nav-item item-menu">
-                        <a href="./intro.html">    Giới thiệu</a>
+                    <li id="butt_gioithieu" onclick="main_gioithieu()" class="nav-item item-menu">
+                        Giới thiệu
                     </li>
-                    <li class="nav-item item-menu">
-                        <a href="./service.html">    Dịch vụ</a>
+                    <li id="butt_dichvu" onclick="main_dichvu()" class="nav-item item-menu">
+                        Dịch vụ
                     </li>
-                    <li class="nav-item item-menu">
-                        <a href="./notify.html">    Thông báo</a>
+                    <li id="butt_thongbao" onclick="main_thongbao()" class="nav-item item-menu">
+                        Thông báo
                     </li>
-                    <li class="nav-item item-menu">
-                        <a href="./recruitment.html">    Tuyển dụng</a>
+                    <li id="butt_tuyendung" onclick="main_tuyendung()" class="nav-item item-menu">
+                        Tuyển dụng
                     </li>
-                    <li class="nav-item item-menu">
-                        <a href="./image.html">    Hình ảnh</a>
+                    <li id="butt_hinhanh" onclick="main_hinhanh()" class="nav-item item-menu">
+                        Hình ảnh
                     </li>
                 </ul>
             </nav>
         </header>
-        <main style="min-height: 500px;" class="contain">
+        <main id="main_lelong" style="min-height: 500px;" class="contain">
             <!-- <h1 style="text-align: center; margin-top: 100px;">loading ...</h1>
             <h1 style="text-align: center; margin-top: 100px;">kéo xuống ...</h1> -->
             <h1 class="title-center">Giới thiệu</h1>
@@ -109,7 +111,7 @@
 
 
 
-    <div class="modal-popup modal-popup-menu ">
+    <div onclick="menuClose()" class="modal-popup modal-popup-menu ">
         <div class="modal-menu ">
             <div class="js-modal-close-menu close-modal ">
                 <i class="far fa-times-circle "></i>
@@ -117,46 +119,32 @@
             <ul class="menu_nav-list ">
                 <li class="menu_nav-item-menu ">Menu</li>
                 <li class="menu_nav-item ">
-                    <a href="/"> <i class="ti-home "></i> Trang chủ</a>
+                    <a href="index.html"> <i class="ti-home "></i> Trang chủ</a>
                 </li>
-                <li class="menu_nav-item ">
-                    <a href="./intro.html">Giới thiệu</a>
+                <li id="butt_gioithieu_modal" onclick="main_gioithieu()" class="menu_nav-item ">
+                    Giới thiệu
                 </li>
-                <li class="menu_nav-item ">
-                    <a href="./intro.html">Dịch vụ</a>
+                <li id="butt_dichvu_modal" onclick="main_dichvu()" class="menu_nav-item ">
+                    Dịch vụ
                 </li>
-                <li class="menu_nav-item ">
-                    <a href="./notify.html">Thông báo</a>
+                <li id="butt_thongbao_modal" onclick="main_thongbao()" class="menu_nav-item ">
+                    Thông báo
                 </li>
-                <li class="menu_nav-item ">
-                    <a href="./recruitment.html ">Tuyển dụng</a>
+                <li id="butt_tuyendung_modal" onclick="main_tuyendung()" class="menu_nav-item ">
+                    Tuyển dụng
                 </li>
-                <li class="menu_nav-item ">
-                    <a href="./image.html">Hình ảnh</a>
+                <li id="butt_hinhanh_modal" onclick="main_hinhanh()" class="menu_nav-item ">
+                    Hình ảnh
                 </li>
             </ul>
         </div>
     </div>
-    <script>
-        const btnMenu = document.getElementById('btn__menu')
-        const modal = document.querySelector('.modal-popup')
-        const modalMenu = document.querySelector('.modal-popup-menu')
-
-        const modalCloseMenu = document.querySelector('.js-modal-close-menu')
-
-        function menuShow() {
-            modalMenu.classList.add('modal-show')
-        }
-
-        function menuClose() {
-            modalMenu.classList.remove('modal-show')
-        }
-        // btnLogin.addEventListener('click', showModalLogin)
-        modalCloseMenu.addEventListener('click', menuClose)
-        btnMenu.onclick = function() {
-            menuShow()
-        };
-    </script>
+    <script src="./logic/gioithieu.js"></script>
+    <script src="./logic/dichvu.js"></script>
+    <script src="./logic/thongbao.js"></script>
+    <script src="./logic/hinhanh.js"></script>
+    <script src="./logic/tuyendung.js"></script>
+    <script src="./logic/main.js"></script>
 </body>
 
 </html>

@@ -1,8 +1,9 @@
 main_lelong_butt_gioithieu_html = `
 <h1 class="title-center">Giới thiệu</h1>
 <div class="video-itro">
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/rWi-v4DkNyU?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
+    <iframe frameborder="0 " allowfullscreen="1 " allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture " title="YouTube video player " width="100% " height="100% " src="https://www.youtube.com/embed/oCc-o68auAA?controls=0&amp;mute=0&amp;controls=1&amp;playsinline=1&amp;showinfo=0&amp;rel=0&amp;iv_load_policy=3&amp;modestbranding=1&amp;enablejsapi=1&amp;widgetid=1 "
+        id="widget2 ">
+    </iframe>
 </div>
 <p>công ty chúng tôi ............ ......................... ................... ................... .......... ............ ......................... ......................... ......................... ........................... ......................................
     ...................... ......................... ......................... ................... ....................</p>
